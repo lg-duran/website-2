@@ -1,0 +1,741 @@
+:root{
+	--blue: #003e51;
+	--orange:#ff2c04;
+	--box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0,.1)
+}
+
+
+* {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none; border: none;
+	transition: all .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 5.5em;
+	scroll-behavior: smooth;
+}
+
+.sub-heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--blue);
+	text-align: center;
+	font-size: 4rem;
+}
+
+.heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--blue);
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+header {
+	position: fixed;
+	top: 0; left: 0; right: 0;	
+	background: var(--blue);
+	padding: 1rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+header .logo {
+	cursor: pointer;
+}
+
+header .logo img {
+    width: 15rem;
+}
+
+header .navbar {  	  
+    margin-left: 2rem;
+}
+
+header .navbar a{
+    font-size: 1.5rem;   
+    padding: .5rem 1.5rem; 
+    color: #fff;
+}
+
+header .navbar a:hover {
+	color: var(--orange);	
+}
+
+header .icons i {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 1rem;
+    cursor: pointer;    
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .icons #menu-bars {
+	display: none;
+}
+
+#home {
+	background-image: url(../images/home-image.png);	
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.home {
+	width: 100%;	
+	height: 70rem;
+	box-sizing: border-box;
+	text-align: center;	
+}
+
+#home .content {		
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;  
+	padding-top: 24.6rem;
+	color: #fff;
+}
+
+.home .content h3 {	    
+	font-size: 4rem;	
+}
+
+.home .content p {
+	margin-top: 2.5rem;	
+	font-size: 2rem;		
+}
+
+.home .content .btn {	
+	margin-top: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;    
+    font-size: 1.5rem;		
+}
+
+.home .content .btn a{ 
+    color: #fff;       
+    padding: 1rem 1.5rem;
+    background-color: var(--orange);	
+}
+
+.home .content .btn a:hover {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.home .content .arrow {
+	margin-top: 20rem;
+}
+
+.home .content .arrow img {
+	height: 6rem;
+	width: 6rem;
+}
+
+.home .image img {        
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.operation {	
+	margin-top: 9rem;
+}
+
+#operation {
+	width: 100%;
+}
+
+.operation h3, .operation p {
+	text-align: center;
+}
+
+.operation p {
+	margin-top: 2.5rem;
+}
+
+.operation .box-container {
+	display: flex;	
+	align-items: center;
+}
+
+.operation .box-container .box {
+	margin-top: 2.5rem;	
+	height: 20rem;
+	width: 20rem;	
+	margin-left: 15rem;	
+	cursor: pointer;
+}
+
+.operation .box-container .box .image img {
+	height: 31rem;
+	width: 33.8rem;
+}
+
+.operation .box-container .box .underlind {
+	position: absolute;
+	height: 7rem;
+	width: 33.8rem;
+	background-color: var(--orange);
+	margin-top: 30rem;	
+}
+
+.operation .box-container .box .content {
+	position: absolute;	
+	display: flex;			
+	margin-top: -.5rem;
+	margin-left: 6rem;
+}
+
+.operation .box-container .box .content i {
+	font-size: 3rem;
+	color: #fff;
+}
+
+.operation .box-container .box .content h3 {
+	margin-top: 1rem;
+	margin-left: .5rem;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.about {		
+	height: 70rem;
+	box-sizing: border-box;
+	margin-top: 22rem;
+}
+
+#about {
+	width: 100%;
+	background: url(../images/sobre-nos-img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}	
+
+.about .content {	
+    position: relative;
+	margin-left: 10rem;    
+	display: block;    
+	padding-top: 20rem;
+	color: #fff;	
+}
+
+.about .content h3 {	    
+	font-size: 4rem;
+	text-align: left;	
+}
+
+.about .content p {
+	margin-top: 2.5rem;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.about .logo img {	
+	margin: 10rem;
+	margin-left: 50rem;	
+	height: 6rem;
+	width: 27rem;	
+}
+
+.review {	
+	padding:2rem 5%;
+	margin-top: 5rem;
+}
+
+#review {
+	width: 100%;
+}
+
+.review .heading {
+	padding-top: 2rem;
+}
+
+.review .box-container {
+	display: flex;	
+	padding-top: 5rem;	
+	padding-bottom: 3rem;	
+}
+
+.review .box-container .box {	
+	height: 35rem;
+	width: 80rem;
+	margin-left: 2.5rem;
+	margin-bottom: 2rem;	
+	background: #fff;
+	border:.1rem solid rgba(0,0,0,.2);
+}
+
+.review .box-container .box .content {
+	display: inline-block;	
+	padding:2rem;
+	padding-top: 0;
+	position: relative;
+	text-align: justify;
+	padding:2rem;
+	margin-left: 0;		
+}
+
+.review .box-container .box .content h3, .review .box-container .box .content p {
+	text-align: justify;
+}
+
+
+.review .box-container .box .content h3 {
+	color: var(--blue);
+	font-size: 2.5rem;	
+	padding-bottom: .5rem;
+}
+
+.review .box-container .box .content p {
+	color: var(--blue);
+	font-size: 1.6rem;
+}
+
+.footer {		
+	background-color: var(--blue);
+	padding: 3rem;	
+}
+
+#footer {
+	width: 100%;
+}
+
+.footer .box-container {	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap:1.5rem;	
+}
+
+.footer .box-container .box {	
+	margin-left: 20%;	
+}
+
+.footer .box-container .box img {
+	margin-bottom: 1.5rem;
+}
+
+.footer .box-container .box a {
+	color: #fff;
+	display: block;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+	font-size: 1.5rem;
+}
+
+.footer .box-container .box h3,	.footer .box-container .box p {
+	text-align: left;
+	padding-bottom: 1rem;	
+}
+
+.footer .box-container .box h3 {	
+	font-size: 2rem;
+	margin-top: 2rem;
+	color: #fff;	
+}
+
+.footer .box-container .box p {
+	text-align: left;
+	font-size: 1.5rem;	
+	color: #fff;
+}
+
+.footer .credit {
+	color: #fff;
+	display: flex;
+	justify-content: center;	
+	padding:1.5rem 1rem;
+	font-size: 1.5rem;
+	margin-left: 1.5rem;
+}
+
+
+@media screen and (max-width:1920px) {
+	
+	.operation .box-container .box {
+		height: 20rem;
+		width: 20rem;	
+		margin-left: 30rem;	
+	}
+
+	.about .logo img {	
+		margin-left: 80rem;	
+	}
+	
+}
+
+@media screen and (max-width:1440px) {
+	
+	
+	.home .content {
+		margin-left: 40rem;		
+	}
+
+	.operation .box-container .box {
+		margin-left: 16rem;	
+	}
+	
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	* {
+		max-width: 1024px;		
+	}
+
+	html {
+		font-size: 55%;		
+		width: 100%;
+	}
+
+	header {
+		padding: 1rem 2rem;
+		width: 1024px;
+	}
+
+	header .icons i, header .icons a {		
+		height: 3rem;
+		width: 3rem;
+		text-align: center;
+		font-size: 1.5rem;			
+	}
+
+	.operation {
+		margin-top: 3rem;				
+		width: 1024px;
+	}
+	
+	.operation h3, .operation p {
+		text-align: center;
+	}
+	
+	.operation p {
+		margin-top: 2.5rem;
+	}
+	
+	#operation .box-container {				
+		display: flex;
+		margin-left: -8rem;
+	}	
+	
+	.about {
+		width: 1024px;		
+	}
+	
+	.about .logo img {			
+		margin-left: 45rem;			
+	}
+	
+	.review {
+		padding: 2rem 5%;		
+		width: 1024px;
+	}
+	
+	.review .box-container {
+		display: inline-block;	
+		width: 100%;
+		padding-bottom: 2.5rem;
+	}
+	
+	.review .box-container .box {
+		height: 100%;
+		width: 95%;		
+	}
+	
+	.review .box-container .box .content {	
+		display: inline-block;	
+		padding:2rem;
+		padding-top: 0;
+		position: relative;
+		text-align: justify;
+		padding:2rem;
+		margin-left: 0;	
+	}
+	
+	.review .box-container .box .content h3 {		
+		font-size: 2.5rem;
+	}
+	
+	.review .box-container .box .content p {
+		margin-top: 1rem;
+		font-size: 1.6rem;
+		padding:1.5rem 0;
+		line-height: 1.5;
+	}
+
+	.footer {	
+		background-color: var(--blue);
+		width: 1024px;		
+	}
+	
+	.footer .box-container {		
+		width: 85%;
+	}
+
+	.footer .box-container .box {	
+		margin-left: 15rem;
+	}
+	
+	.footer .credit {		
+		font-size:2rem;		
+		padding:.5rem;
+		padding-top: 3rem;
+		margin-top: 6rem;
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+	header {
+		width: 768px;
+	}
+
+	header .navbar {  	  
+		margin-left: 1.5rem;
+	}
+
+	header .icons #menu-bars {
+		display: inline-block;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%; left: 0; right: 0;
+		background: #fff;
+		border-top: .1rem solid rgba(0,0,0,.2);
+		border-bottom: .1rem solid rgba(0,0,0,.2);
+		padding: 1rem; 		
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header .navbar.active {
+		margin-left: 0;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	header .navbar a {
+		display: block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: var(--blue);		
+	}
+	
+	#operation .box-container {
+		display: block;	
+		margin-left: -30rem;
+	}
+
+	.operation .box-container .box {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 13rem;		
+	}
+
+	.operation .box-container .box .image img {
+		width: 50rem;
+		box-sizing: border-box;
+		background-size: cover;
+	}
+
+	.operation .box-container .box .underlind {		
+		height: 7rem;
+		width: 50rem;
+		background-color: var(--orange);
+		margin-top: 24rem;	
+	}
+	
+	.operation .box-container .box .content {
+		position: relative;		
+		margin-top: -6rem;
+		margin-left: 9rem;
+	}
+	
+	.operation .box-container .box .content i {
+		font-size: 4rem;		
+	}
+	
+	.operation .box-container .box .content h3 {		
+		font-size: 2.5rem;
+		margin-left: .5rem;
+		white-space: nowrap;
+	}
+
+	.about .logo img {
+		margin-top: 3rem;			
+		margin-left: 30rem;			
+	}
+	
+}
+
+@media screen and (max-width:425px) {
+
+	
+	html {
+		font-size: 50%;		
+		width: 100%;
+	}
+	
+
+	header {
+		width: 425px;
+	}
+
+	.home {
+		height: 80rem;
+	}
+
+	.operation .box-container .box .image img {
+		width: 40rem;		
+		margin-left: 5rem;
+	}
+
+	.operation .box-container .box .underlind {		
+		width: 40rem;
+		margin-left: 5rem;
+	}
+	
+	.operation .box-container .box .content {
+		position: relative;		
+		margin-top: -6rem;
+		margin-left: 9rem;
+	}
+
+	.about .content {	
+		margin-left: 5rem;    
+		padding-top: 10rem;
+	}
+
+	.about .logo img {	
+		margin-top: 4rem;
+		margin-left: 15rem;
+	}
+
+	.review .box-container {
+		margin-left: -1rem;		
+	}
+	
+	.footer .box-container .box {	
+		margin-left: 25%;	
+	}
+
+}
+
+@media screen and (max-width:375px) {
+
+	html {
+		width: 100%;
+	}
+
+	header {
+		width: 375px;
+	}
+
+	.about .content {	
+		margin-left: 2.5rem;    
+		padding-top: 5rem;
+	}
+
+	.about .logo img {
+		margin-top: 6rem;
+		margin-left: 10rem;
+	}
+
+	.review .box-container {
+		margin-left: -1rem;		
+	}
+
+	#footer {
+		width: 375px;
+	}
+
+}
+
+@media screen and (max-width:320px) {
+
+	html {
+		width: 100%;
+	}
+
+	.heading {
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	header {
+		width: 320px;
+	}
+
+	.home .content p {
+		font-size: 1.5rem;
+	}
+
+	.operation {
+		margin-bottom: 1rem;
+	}
+
+	.operation .box-container .box .image img {
+		width: 35rem;		
+		margin-left: 7.5rem;
+	}
+
+	.operation .box-container .box .underlind {		
+		width: 35rem;		
+		margin-left: 7.5rem;
+	}
+
+	.about .content {	
+		margin-left: 2rem;
+		padding-top: 4rem;
+	}
+
+	.about .logo img {
+		margin-top: 2rem;
+		margin-left: 6rem;
+	}
+
+	.review {
+		margin-top: 2rem;
+	}
+
+	.review .sub-heading {
+		padding-bottom: 1rem;
+	}
+
+	.review .heading {
+		white-space: normal;
+	}
+
+	.review .box-container {
+		margin-left: -1.5rem;		
+	}
+
+	#footer {
+		width: 320px;
+	}
+
+	.footer .box-container .box img {
+		margin-left: -2.5rem;
+	}
+
+	.footer .credit {
+		font-size: 1.5rem;
+	}
+	
+}
